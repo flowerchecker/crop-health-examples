@@ -37,7 +37,7 @@ with open('../images/example.jpg', 'rb') as file:
     images = [base64.b64encode(file.read()).decode('ascii')]
 
 response = requests.post(
-    'https://crop.kindwise.com/v1/identification',
+    'https://crop.kindwise.com/api/v1/identification',
     params={'details': 'taxonomy,wiki_url'},
     headers={'Api-Key': 'your_api_key'},
     json={'images': images},
