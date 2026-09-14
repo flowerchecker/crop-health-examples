@@ -54,3 +54,7 @@ for suggestion in identification['result']['disease']['suggestions']:
     print(suggestion["probability"], suggestion['name'])
 
 ```
+
+## On-device routing
+
+If your app handles plants, insects, and mushrooms in one camera flow, classify locally first with the [Kindwise Router](https://huggingface.co/kindwise) (`tiny` / `small` / `base`), then call the matching API.
